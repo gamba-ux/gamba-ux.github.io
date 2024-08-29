@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gabriele</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            background-image: url("https://tinypic.host/images/2024/03/23/fotooo.jpeg");
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 0 5%;
+        }
+
+
+        div {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        header>div {
+            background-color: #333;
+            border-radius: 0 0 10px 10px;
+        }
+
+        nav {
+            margin: 0;
+            font-size: 0px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: .5rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+
+        nav ul li:last-of-type {
+            margin-right: 0px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+
+            display: inline-block;
+            padding: 1rem 1.5rem;
+        }
+
+        nav ul li:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        header {
+            background-image: url("https://sfondo.info/i/original/e/e/a/4613.jpg");
+            text-align: center;
+            margin: 1rem;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-style: italic;
+            display: inline-block;
+            color: lightskyblue;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 2px black;
+        }
+
+
+        h2 {
+            border-radius: 15px;
+            margin: auto;
+            margin-bottom: 1rem;
+            width: 60%;
+            padding: .5em 0;
+            border-width: 5px;
+            border: black solid;
+            background-color: navy;
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h6 {
+            text-align: right;
+        }
+
+        img {
+            display: inline-block;
+            margin-left: 30%;
+            width: 40%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            border-radius: 5px;
+        }
+
+        section:first-of-type a img {
+            float: left;
+            margin: 0 1rem 2rem 0;
+        }
+
+        #bandiera {
+            width: 10rem;
+            height: 7rem;
+            border: none;
+            margin: 0;
+        }
+
+        section {
+            clear: both;
+            padding: 1rem;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: RoyalBlue;
+            color: white;
+
+            aside {
+                width: 100%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: left;
+
+            }
+
+            .button {
+                padding: 24px;
+                background-color: #04AA6D;
+            }
+
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        footer {
+            padding: 1rem;
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+
+
+        .image-description {
+            display: inline;
+            font-size: small;
+        }
+    </style>
+    <script type="text/javascript" defer>
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function apriSito() {
+            if (document.getElementById("sito").selectedIndex == "0")
+                alert("Scelta obbligatoria")
+            else
+                apriFinestra(document.getElementById("sito").value)
+        }
+
+        function apriFinestra(site) {
+            switch (site) {
+                case "1":
+                    window.open("https://www.esercito.difesa.it/concorsi-e-arruolamenti/Pagine/Il-Pilota.aspx")
+                    break;
+                case "2":
+                    window.open("https://www.esercito.difesa.it/concorsi-e-arruolamenti/Pagine/Il-Cinofilo.aspx")
+                    break;
+                case "3":
+                    window.open("https://www.esercito.difesa.it/concorsi-e-arruolamenti/Pagine/Il-Paracadutista.aspx")
+                    break;
+                case "4":
+                    window.open("https://www.esercito.difesa.it/concorsi-e-arruolamenti/Pagine/alpino.aspx")
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="inizio" class="gradient-text">GABRIELE DE CARLI </h1>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#Chi sono io?">Chi sono io?</a>
+                    </li>
+                    <li><a href="#Dove risiedo?">Dove risiedo?</a></li>
+                    <li><a href="#La mia famiglia">La mia famiglia</a></li>
+                    <li><a href="#Il mio percorso scolastico">Il mio percorso scolastico</a></li>
+                    <li><a href="#I miei interessi">I miei interessi</a></li>
+                    <li><a href="#Materie preferite">Materie preferite</a></li>
+                    <li><a href="#Cosa vorrei fare da grande">Cosa vorrei fare da grande</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2 id="Chi sono io?">Chi sono io?</h2>
+            <a href="https://tinypic.host/image/IMG-20240217-155850-%281%29.DBDioG"><img
+                    src="https://tinypic.host/images/2024/02/23/IMG_20240217_155850-1.jpeg"
+                    alt="Foto di Gabriele De Carli"></a><br>
+            <p>-<b>Nome</b>: Gabriele<br><br>-<b>Cognome</b>: De Carli<br><br>-<b>Data di nascita</b>: 2 settembre 2006<br><br>-<b>Luogo di nascita</b>: Cesena<br><br>-<b>Professione</b>: studente
+			<br><br>-<b>Scuola</b>: Liceo scientifico
+			<br><br>-<b>Altezza</b>: 1,75 m</p>
+            <div class="center">
+
+                <img src="https://tse3.mm.bing.net/th?id=OIP.sJTJf32JisNX9JvEp7j-rQHaEk&pid=Api&P=0&h=180"
+                    alt="Foto di Gabriele De Carli" id="bandiera">
+            </div>
+
+        </section>
+
+        <section>
+            <h2 id="Dove risiedo?">La mia residenza</h2>
+            <p> Da sempre vivo a <mark>Savignano sul Rubicone</mark>, una ridente città di dimensioni umili.<br>
+                Qui ho coltivato la maggior parte delle mie amicizie, inoltre Savignano dispone di tutti i servizi
+                necessari.<br>
+                Vivo con la mia famiglia in un palazzo situato nel centro storico, a pochi passi dal <a
+                    href='#Ponte romano'>Ponte romano</a>.</p>
+
+            <p>Di seguito il link al <strong>comune di Savignano</strong>, per avere maggiori informazioni:</p>
+            <div class="center">
+                <a href="https://comune.savignano-sul-rubicone.fc.it/servizi/notizie/notizie_homepage.aspx">link al sito
+                    del
+                    comune di savignano sul rubicone</a><br>
+            </div>
+
+            <img src="https://visionjournal.it/wp-content/uploads/2022/04/rubicone_open-1.jpg"
+                alt="foto ponte romano">
+            <p class="image-description">Ponte Romano</p>
+
+        </section>
+
+        <section>
+            <h2 id="La mia famiglia">La mia famiglia</h2>
+            <p>La mia famiglia è numerosa: mio padre si chiama Paolo, mia madre Mara; ho un fratello di 26 anni che si
+                chiama Emanuele,<br> un fratello di 23 che si chiama Nicolò e una sorella minore di nome Sofia</p>
+
+
+        </section>
+
+        <section>
+            <h2 id="Il mio percorso scolastico">Il mio percorso scolastico</h2>
+            <p> Il mio percorso scolastico inizia all'età di <strong>6 anni</strong>, dopo avere frequentato 3 anni di
+                scuola materna,
+                mia madre mi iscrive alla <mark>Dante Alighieri</mark></p>
+            <a href="https://tinypic.host/image/DBqvzf"><img
+                    src="https://tinypic.host/images/2024/02/26/primo-giorno.jpeg" alt="primo-giorno.jpeg"></a>
+            <p class="image-description">
+                Il<strong> primo giorno di elementari</strong> (settembre 2012)
+            </p>
+            <p>Nel <strong>2017</strong> iniziano le <strong>scuole medie</strong>, ho frequentato la scuola
+                <mark>Giulio
+                    Cesare</mark> a
+                Savignano,<br>
+                i primi due anni sono trascorsi molto velocemente,<br>
+                nel 2020, durante la terza media, la <u>pandemia</u> ha caratterizato in maniera indelebile il mio
+                percorso,<br>
+                ed è perdurato per i successivi due anni.<br>
+                La scelta delle scuole superiori è stata priva di dubbi, fortunatamente avevo le idee chiare,<br>
+                e senza indugio mi sono iscritto al <strong>liceo scientifico (2020)</strong>.<br>
+                La scuola mi piace, mi trovo bene con i miei compagni.<br>
+                L'istituto <strong>Marie Curie</strong> è ottimo (per questo vi rimando alla pagina della scuola):
+            </p>
+            <div class="center">
+                <a href="https://www.iissmcurie.edu.it/">link alla pagina del Marie Curie</a>
+            </div>
+        </section>
+        <br>
+
+        <section>
+            <h2 id="I miei interessi">I miei interessi</h2>
+            <h3> ECCO LE COSE CHE AMO:</h3>
+
+            <h4>1) Il <em>CALISTHENICS</em></h4>
+            <p>Il termine <u>calisthenics</u> deriva dal greco, e significa <strong>"bellezza"</strong> e
+                <strong>"forza"</strong>.
+                Cos'è il <u>calisthenics</u>? è una disciplina a corpo libero in cui si sfida la gravità.<br>
+                Non si sollevano pesi, bensì il proprio corpo, lo scopo è acquisire la tecnica e la forza <br>
+                per fare movimenti scenici.
+            </p>
+
+            <div style="overflow-x: auto;">
+                <table>
+                    <caption>Esempio di allenamento</caption>
+                    <thead>
+                        <tr>
+                            <th>LUNEDI'</th>
+                            <th>MARTEDI'</th>
+                            <th>MERCOLEDI'</th>
+                            <th>GIOVEDI'</th>
+                            <th>VENERDI'</th>
+                            <th>SABATO</th>
+                            <th>DOMENICA
+                            <th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>verticale</td>
+                            <td>riposo</td>
+                            <td>trazioni</td>
+                            <td>piegamenti</td>
+                            <td>riposo</td>
+                            <td>dips</td>
+                            <td>riposo</td>
+                        </tr>
+                        <tr>
+                            <td> 5x60"</td>
+                            <td>scarico attivo</td>
+                            <td>15x10</td>
+                            <td>30x3</td>
+                            <td>scarico passivo</td>
+                            <td>10+11+12</td>
+                            <td>scarico attivo</td>
+                        </tr>
+                        <tr>
+                            <td> recupero:2'</td>
+                            <td>scarico attivo</td>
+                            <td>recupero:40"</td>
+                            <td>recupero:3'</td>
+                            <td>scarico passivo</td>
+                            <td>recupero:20"</td>
+                            <td>scarico attivo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <a href="https://tinypic.host/image/IMG-20240310-184952.D3ENK4"><img
+                    src="https://tinypic.host/images/2024/03/10/IMG_20240310_184952.jpeg" alt="foto calisthenics"></a>
+            <p class="image-description"> Io che pratico <strong>Calisthenics</strong></p>
+
+
+            <h4>2) l' <em>ATLETICA LEGGERA</em></h4>
+            <a href="https://tinypic.host/image/IMG-20240310-190211.D3EbXk"><img
+                    src="https://tinypic.host/images/2024/03/10/IMG_20240310_190211.jpeg" alt="foto atletica"></a>
+            <p> Da un anno a questa parte ho iniziato a praticare <strong>atletica leggera</strong>, adoro correre.</p>
+            <a href="https://tinypic.host/image/IMG-20240310-190628.DGqip4"><img
+                    src="https://tinypic.host/images/2024/03/23/IMG_20240310_190628.jpeg" alt="foto atletica2.jpeg"></a>
+
+            <h4>3) L' <em>ORNITOLOGIA</em></h4>
+            <p> Mio padre mi ha trasmesso la passione per i <u>volatili</u>, allevo, osservo e studio i <em>piccioni
+                    volantini</em>, specializzati nel volo breve a scopo di richiamo.</p>
+            <a href="https://tinypic.host/image/DGqu1O"><img
+                    src="https://tinypic.host/images/2024/03/23/IMG_20231008_071910.jpeg" alt="foto piccioni.jpeg"></a>
+            <p> Attualmente la mia voliera ospita solo <strong>2 coppie di piccioni</strong></p>
+            <a href="https://tinypic.host/image/DGq85v"><img
+                    src="https://tinypic.host/images/2024/03/23/IMG_20230517_160257.jpeg" alt="foto2 piccioni.jpeg"></a>
+            <p class="image-description">
+                "Piccio" durante una sessione di<strong> condizionamento</strong>
+            </p>
+        </section>
+        <section>
+            <h2 id="Materie preferite">Materie preferite</h2><br>
+            <p> Ecco il podio delle mie tre materie preferite:</p>
+
+            <a href="https://tinypic.host/image/IMG-20240323-224054.DGqSAd"><img
+                    src="https://tinypic.host/images/2024/03/23/IMG_20240323_224054.jpeg" alt="Foto podio.jpeg"></a>
+
+        </section>
+
+        <section>
+            <h2 id="Cosa vorrei fare da grande">Cosa vorrei fare da grande</h2>
+            <p> Mi piacerebbe entrare nell'accademia ufficiali dell'esercito a Modena</p>
+            <a href="https://tinypic.host/image/Da5Qex"><img
+                    src="https://tinypic.host/images/2024/03/29/piolib20180125m-123.webp" alt="foto esercito"></a>
+            <div>
+                <form>
+                    <h3>Dai un'occhiata alle varie opportunità</h3>
+                    <label for="sito" hidden>Scegli un sito:</label>
+                    <select id="sito">
+                        <option selected hidden disabled value="">Scegli...</option>
+                        <option value="1">Pilota?</option>
+                        <option value="2">Cinofilo?</option>
+                        <option value="3">Paracadutista?</option>
+                        <option value="4">Alpino?</option>
+                    </select>
+                    <input type="button" value="Naviga" onclick="apriSito()">
+                </form>
+            </div>
+        </section>
+        <hr>
+
+        <footer>
+            <p>Molte delle immagini presenti all'interno della pagina appartengono al repertorio personale
+                dell'autore.
+                Grazie per l'atenzione.</p>
+
+            <label for="upButton">Vai all'inizio</label>
+            <button onclick="topFunction()" id="upButton" title="Vai all'inizio">Vai su</button>
+        </footer>
+
+    </main>
+</body>
+
+
+</html>
